@@ -1,6 +1,13 @@
 FROM gitpod/workspace-full
                     
-USER gitpod
+USER root
+
+RUN apt-get install gcc g++ python && #
+    sudo add-apt-repository ppa:maarten-fonville/protobuf && #
+    sudo apt-get update && #
+    apt-get install libzmq5 libzmq5-dev && #
+    apt-get install libprotobuf-dev && #
+    apt-get install protobuf-compiler
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
