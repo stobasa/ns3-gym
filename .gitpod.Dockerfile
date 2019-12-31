@@ -6,7 +6,8 @@ USER root
     
 RUN apt-get update && \
         apt-get install -y gcc g++ python libzmq5 libzmq5-dev libprotobuf-dev protobuf-compiler
-        
+
+WORKDIR ./ns3-gym       
         
 RUN ./waf configure && \
         ./waf build
