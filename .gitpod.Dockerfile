@@ -9,8 +9,8 @@ RUN apt-get update && \
 
 WORKDIR ./ns3-gym       
         
-RUN ./waf configure && \
-        ./waf build
+RUN ./waf configure
+RUN ./waf build
         
 RUN pip3 install ./src/opengym/model/ns3gym
 
