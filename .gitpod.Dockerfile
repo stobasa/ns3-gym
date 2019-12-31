@@ -10,6 +10,8 @@ RUN apt-get update && \
         
 RUN ./waf configure && \
         ./waf build
+        
+RUN pip3 install ./src/opengym/model/ns3gym
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
