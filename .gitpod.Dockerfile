@@ -5,7 +5,7 @@ USER root
 
     
 RUN apt-get update && \
-        apt-get install gcc g++ python libzmq5 libzmq5-dev libprotobuf-dev protobuf-compiler
+        apt-get install -y gcc g++ python libzmq5 libzmq5-dev libprotobuf-dev protobuf-compiler
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
