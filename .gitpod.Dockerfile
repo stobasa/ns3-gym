@@ -3,8 +3,8 @@ FROM gitpod/workspace-full
 USER root
 
 RUN apt-get install gcc g++ python && #
-    sudo add-apt-repository ppa:maarten-fonville/protobuf && #
-    sudo apt-get update && #
+    #add-apt-repository ppa:maarten-fonville/protobuf && #
+    #apt-get update && #
     apt-get install libzmq5 libzmq5-dev && #
     apt-get install libprotobuf-dev && #
     apt-get install protobuf-compiler
